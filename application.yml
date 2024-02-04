@@ -71,3 +71,13 @@ token:
     key: 413F4428472B4B6250655368566D5970337336763979244226452948404D6351
 security:
   tokenKey: ^%*(EV=9032mlf#y
+modules:
+    server:
+        - name: auth
+          url: http://localhost:1003/0auth2/
+        - name: admin
+          url: http://localhost:1004/admin/
+    url: 
+      - name: loadusername
+        url: api/v1/auth/signin/loadusername
+
