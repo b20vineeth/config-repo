@@ -59,7 +59,7 @@ app:
   username:
     suggest:
       noofusernamesuggestion: '5'
-      nodeValue: startup,founder,venture,innovator,CEO,entrepreneur,business,hustle,success,growth,mentor,investor,visionary,leadership,risktaker,disrupt,innovation,enterprise,resilient,achiever,strategy,collaborate,impact,solution,finance,profit,empower,motivation,network,technology,creativity,scalability,marketing,branding,negotiation,partnership,investment,resilience,sustainability,agility,adaptability,perseverance,global,market,niche,customer,value,disruptor,wealth,ambition,dedication,passion,commitment,productivity,efficiency,opportunity,execution,inspiration,risk,learning,innovation,community,leadership,mentorship,collaboration,communication,empowerment,influence,growth
+      value: startup,founder,venture,innovator,CEO,entrepreneur,business,hustle,success,growth,mentor,investor,visionary,leadership,risktaker,disrupt,innovation,enterprise,resilient,achiever,strategy,collaborate,impact,solution,finance,profit,empower,motivation,network,technology,creativity,scalability,marketing,branding,negotiation,partnership,investment,resilience,sustainability,agility,adaptability,perseverance,global,market,niche,customer,value,disruptor,wealth,ambition,dedication,passion,commitment,productivity,efficiency,opportunity,execution,inspiration,risk,learning,innovation,community,leadership,mentorship,collaboration,communication,empowerment,influence,growth
         mindset,resilience,persistence,investment,negotiation,strategy,scalability,agility,adaptability,marketing,branding,disruption
         ,creativity,vision,mission,impact,success,achievement,excellence,ambition,wealth,profit,ethics
         ,diversity,inclusion,legacy
