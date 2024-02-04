@@ -80,4 +80,6 @@ modules:
     url: 
       - name: loadusername
         url: api/v1/auth/loadusername
+      - name: fetchbev
+        url: /api/v1/bev/fetchbev
 
