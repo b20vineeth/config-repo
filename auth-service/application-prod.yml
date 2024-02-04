@@ -1,68 +1,16 @@
 spring:
-  main:
-    allow-circular-references: 'true'
-  kafka:
-    producer:
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      bootstrap-servers: localhost:9092
-    consumer:
-      group-id: group-id
-      auto-offset-reset: earliest
-      bootstrap-servers: localhost:9092
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      properties:
-        spring:
-          json:
-            trusted:
-              packages: '*'
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-    properties:
-      sasl:
-        jaas:
-          config: org.apache.kafka.common.security.scram.ScramLoginModule required
-            username="admin" password="admin-secret";
-        mechanism: PLAIN
-        kerberos:
-          service:
-            name: kafka
-      security:
-        protocol: 'SASL_PLAINTEXT '
-    template:
-      default-topic: '"kfk1090"'
-    bootstrap-servers: 'localhost:9092 '
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        format_sql: 'true'
-        dialect: org.hibernate.dialect.MySQL8Dialect
-        use_sql_comments: 'true'
-        type: trace
-    show-sql: 'true'
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    password: password
     username: root
     url: jdbc:mysql://localhost:3306/okay24?useSSL=false
-  jackson:
-    default-property-inclusion: NON_NULL
-  mvc:
-    pathmatch:
-      matching-strategy: ant-path-matcher
-auto:
-  create:
-    topics:
-      enable: 'true  '
+    password: password
 app:
   username:
     suggest:
-      noofusernamesuggestion: '5'
       value: startup,founder,venture,innovator,CEO,entrepreneur,business,hustle,success,growth,mentor,investor,visionary,leadership,risktaker,disrupt,innovation,enterprise,resilient,achiever,strategy,collaborate,impact,solution,finance,profit,empower,motivation,network,technology,creativity,scalability,marketing,branding,negotiation,partnership,investment,resilience,sustainability,agility,adaptability,perseverance,global,market,niche,customer,value,disruptor,wealth,ambition,dedication,passion,commitment,productivity,efficiency,opportunity,execution,inspiration,risk,learning,innovation,community,leadership,mentorship,collaboration,communication,empowerment,influence,growth
         mindset,resilience,persistence,investment,negotiation,strategy,scalability,agility,adaptability,marketing,branding,disruption
         ,creativity,vision,mission,impact,success,achievement,excellence,ambition,wealth,profit,ethics
         ,diversity,inclusion,legacy
+      noofusernamesuggestion: '5'
     restrictedwords: 'Apple,Google,Microsoft,Toyota,Mercedes-Benz,IBM,facebook,google,4r5e,5h1t,5hit,a55,anal,anus,ar5e,arrse,arse,ass,ass-fucker,asses,assfucker,assfukka,asshole,assholes,asswhole,a_s_s,b!tch,b00bs,b17ch,b1tch,ballbag,balls,ballsack,bastard,beastial,beastiality,bellend,bestial,bestiality,bi+ch,biatch,bitch,bitcher,bitchers,bitches,bitchin,bitching,bloody,blow
       job,blowjob,blowjobs,boiolas,bollock,bollok,boner,boob,boobs,booobs,boooobs,booooobs,booooooobs,breasts,buceta,bugger,bum,bunny
       fucker,butt,butthole,buttmuch,buttplug,c0ck,c0cksucker,carpet muncher,cawk,chink,cipa,cl1t,clit,clitoris,clits,cnut,cock,cock-sucker,cockface,cockhead,cockmunch,cockmuncher,cocks,cocksuck
@@ -85,8 +33,3 @@ app:
       hit,s.o.b.,sadist,schlong,screwing,scroat,scrote,scrotum,semen,sex,sh!+,sh!t,sh1t,shag,shagger,shaggin,shagging,shemale,shi+,shit,shitdick,shite,shited,shitey,shitfuck,shitfull,shithead,shiting,shitings,shits,shitted,shitter,shitters
       ,shitting,shittings,shitty ,skank,slut,sluts,smegma,smut,snatch,son-of-a-bitch,spac,spunk,s_h_i_t,t1tt1e5,t1tties,teets,teez,testical,testicle,tit,titfuck,tits,titt,tittie5,tittiefucker,titties,tittyfuck,tittywank,titwank,tosser,turd,tw4t,twat,twathead,twatty,twunt,twunter,v14gra,v1gra,vagina,viagra,vulva,w00se,wang,wank,wanker,wanky,whoar,whore,willies,willy,xrated,xxx '
   domain: '"okay24.com";'
-token:
-  signing:
-    key: 413F4428472B4B6250655368566D5970337336763979244226452948404D6351
-security:
-  tokenKey: ^%*(EV=9032mlf#y
