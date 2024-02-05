@@ -1,4 +1,7 @@
 spring:
+  redis:
+    host: localhost
+    port: 6379
   kafka:
     producer:
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
