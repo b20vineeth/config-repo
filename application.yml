@@ -2,6 +2,7 @@ spring:
   redis:
     host: localhost
     port: 6379
+    maxexpiry: 10
   kafka:
     producer:
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
@@ -66,8 +67,7 @@ log4j:
         kafka: 'OFF'
 logging:
   level:
-    org.springframework.security: DEBUG
-    org.springframework.data.redis: DEBUG
+    org.springframework.security: DEBUG 
 token:
   signing:
     key: 413F4428472B4B6250655368566D5970337336763979244226452948404D6351
