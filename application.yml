@@ -77,6 +77,10 @@ token:
     tokenexpiry: 10
 security:
   tokenKey: ^%*(EV=9032mlf#y
+google:
+  reCaptcha:
+    secretkey: 6Lf7oJopAAAAAHVUinsJuNd-FpWS95g-tHhQKPqe
+    url: https://www.google.com/recaptcha/api/siteverify
 modules:
     server:
         - name: auth
@@ -94,4 +98,6 @@ modules:
         url: api/v1/auth/validate/username
       - name: validateemail
         url: api/v1/auth/validate/email
+      - name: validatefields
+        url: api/v1/fieldvalidator/validate
 
